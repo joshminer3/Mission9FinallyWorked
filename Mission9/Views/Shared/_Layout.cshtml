@@ -6,14 +6,28 @@
     <title>@ViewData["Title"] - Mission9</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" type="image/x-icon" href="~/Book_25711.ico" />
+
 </head>
 <body>
- 
 
-    <div>
+    <div class="bg-dark text-white p-2">
+        <span class="navbar-brand m-lg-2">The Book Store</span>
+    </div>
 
-        @RenderBody()
+    <div class="row m-1 p-1">
+        
+        <div id="categories" class="col-3">
+            <vc:categories-vc></vc:categories-vc>
+        </div>
 
+    <div class="col-9">
+        <div>
+
+            @RenderBody()
+
+        </div>
+    </div>
     </div>
 
 </body>
